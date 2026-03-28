@@ -1,0 +1,138 @@
+.ac-container {
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.ac-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ac-header h2 {
+  font-weight: 600;
+}
+
+.ac-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ac-search {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  width: 220px;
+}
+
+.ac-notification {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* TITLES */
+.ac-title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.ac-title-row h3 {
+  margin: 0;
+}
+
+/* GRID */
+.ac-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/* CARDS */
+.ac-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.ac-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ac-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.ac-card h1 {
+  margin: 10px 0;
+}
+
+.ac-card .positive {
+  color: #22c55e;
+}
+
+.ac-card .negative {
+  color: #ef4444;
+}
+
+/* Card colors */
+.ac-card.blue { border-left: 5px solid #3b82f6; }
+.ac-card.green { border-left: 5px solid #22c55e; }
+.ac-card.purple { border-left: 5px solid #8b5cf6; }
+.ac-card.dark { border-left: 5px solid #1f2937; }
+
+/* RIGHT PANEL */
+.ac-trend-panel {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.ac-chart {
+  margin: 20px 0;
+}
+
+.ac-legend div {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.ac-sync {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .ac-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ac-title-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

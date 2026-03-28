@@ -1,0 +1,116 @@
+.audit-page {
+  padding: 30px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+/* Header */
+.audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.audit-actions select,
+.audit-actions button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+/* Progress Rings */
+.stats-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.ring-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 140px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.ring-text {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+}
+
+/* Search */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Table */
+.table-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  padding: 12px 20px;
+  align-items: center;
+}
+
+.table-header {
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+
+.table-row:hover {
+  background: #f9fafb;
+}
+
+.row-actions button {
+  margin-right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
